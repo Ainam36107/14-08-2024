@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+        }   
+        .form-input {
+            display: flex;
+            flex-direction: column;
+            padding-right: 10px;
+        }
+        .submit-btn {
+            display: flex;
+            justify-content: center;
+        }
+        .container
+         h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .container
+         input[type="text"],
+        .container
+         select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .container
+         input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .container
+         input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class=" YG ">
+        <h2>สมาชิก</h2>
+        <form action="register.php" method="post">
+            <div class="Treasure">
+                <label for="username">ชื่อ:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">ชั้น:</label>
+                <input type="text" id="password" name="password" required>
+                
+                <label for="additional">เลขที่:</label>
+                <input type="text" id="additional" name="additional">
+                
+                <label for="gender">เพศ:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">เลือกเพศ</option>
+                    <option value="ชาย">ชาย</option>
+                    <option value="หญิง">หญิง</option>
+                    <option value="อื่นๆ">อื่นๆ</option>
+                </select>
+                
+                <div class="Babymon">
+                    <input type="submit" value="ตกลง">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
