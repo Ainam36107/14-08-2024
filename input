@@ -64,10 +64,10 @@
     </style>
 </head>
 <body>
-    <div class=" YG ">
+    <div class="container ">
         <h2>สมาชิก</h2>
         <form action="register.php" method="post">
-            <div class="Treasure">
+            <div class="form-input">
                 <label for="username">ชื่อ:</label>
                 <input type="text" id="username" name="username" required>
                 
@@ -85,7 +85,7 @@
                     <option value="อื่นๆ">อื่นๆ</option>
                 </select>
                 
-                <div class="Babymon">
+                <div class="submit-btn">
                     <input type="submit" value="ตกลง">
                 </div>
             </div>
